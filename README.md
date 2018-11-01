@@ -3,7 +3,12 @@ Creates a command line that will delete all temporary latex compilation files fo
 
 the command is:
 ```
-if hash cleantex 2>/dev/null; then echo "command cleantex already defined"; else echo -e "#command line for cleantex added  $(date)\ncleantex() {\n find \${1:-~} \( -iname '*.aux' -or -iname '.*.aux'  \) -delete\n}">>.bashrc; fi;
+if hash cleantex 2>/dev/null; 
+  then 
+    echo "command cleantex already defined"; 
+  else 
+    echo -e "#command line for cleantex added  $(date)\ncleantex() {\n find \${1:-~} \( -iname '*.aux' -or -iname '.*.aux'  \) -delete\n}">>.bashrc;
+fi;
 ```
 
 One can add all the undesired extensions.
