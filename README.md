@@ -17,3 +17,5 @@ this tests if the cleantex command exists, then if it does not, it appends the l
 cleantex takes one optional argument that is a folder, by default home directory, if it does it is not doing anything.
 
 # XXXtex
+
+# cleantexfile
