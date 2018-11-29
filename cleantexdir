@@ -1,8 +1,0 @@
-#!/bin/bash
-if hash cleantex 2>/dev/null; 
-  then 
-    echo "command cleantex already defined"; 
-  else 
-    echo -e "#command line for cleantex added  $(date)\ncleantex() {\n find \${1:-~} \( -iname '.log' or -iname '.dvi' or -iname '.backup' or -iname '.~' or -iname '.bbl' or -iname '.nav' or -iname '.out' or -iname '.snm' or -iname '.vrb' or -iname '.blg' or -iname '.toc' or -iname '.lot'\) -delete\n}">>.bashrc;
-    source ~/.bashrc;
-fi;

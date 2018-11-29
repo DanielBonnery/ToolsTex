@@ -1,0 +1,8 @@
+#!/bin/bash
+if hash cleantexfile 2>/dev/null; 
+  then 
+    echo "command cleantexfile already defined"; 
+  else 
+    echo -e "#command line for cleantexfile added  $(date)\ncleantexfile() {\n rm \${1}.log \${1}.dvi \${1}.backup \${1}.bbl \${1}.nav \${1}.out \${1}.snm \${1}.vrb \${1}.blg \${1}.toc \${1}.lot'\n}">>.bashrc;
+    source ~/.bashrc;
+fi;
