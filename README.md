@@ -15,3 +15,5 @@ fi;
 One can add all the undesired extensions.
 this tests if the cleantex command exists, then if it does not, it appends the lines that correspond to function cleantex
 cleantex takes one optional argument that is a folder, by default home directory, if it does it is not doing anything.
+
+# XXXtex
